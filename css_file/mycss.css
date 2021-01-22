@@ -1,9 +1,10 @@
+body {
+  /* height: 1000px;  */
+}
+
 
 .tinggi {
     height: 380px; 
-    position: fixed;
-    width: 100%; 
-    z-index: -4; 
 }
 
 /* Style the navigation menu */
@@ -28,6 +29,7 @@
     color: white; 
     position: absolute;
     /* margin-top: 50px;  */
+    z-index: 99;
   }
 
 .togel ul li {
@@ -39,6 +41,7 @@
     text-decoration: none;
     color: white; 
     margin-left: -20px; 
+    z-index: 1000; 
 }
 
   
@@ -80,4 +83,8 @@
     color: white;
     text-align: center;
     text-decoration: none;
+  }
+
+  .active:hover {
+    color: red; 
   }
