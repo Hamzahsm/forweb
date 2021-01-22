@@ -1,28 +1,45 @@
 
 .tinggi {
     height: 380px; 
+    position: fixed;
+    width: 100%; 
+    z-index: -4; 
 }
 
 /* Style the navigation menu */
-.topnav {
+.topnav{
     overflow: hidden;
     /* background-color: black; */
     position: relative;
     z-index: 4;
     font-family: 'Times New Roman', Times, serif;
-    font-weight: 200;
+    background-color: black;
+    box-shadow: 0 2px 5px rgb(136, 121, 121);
   }
   
   /* Hide the links inside the navigation menu (except for logo/home) */
- #myLinks a {
+ .togel ul {
     /* display: block; */
     background-color: red;
-    width: 20%; 
+    width: 11%; 
     text-decoration: none;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     color: white; 
+    position: absolute;
+    /* margin-top: 50px;  */
   }
+
+.togel ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.togel ul li a {
+    text-decoration: none;
+    color: white; 
+    margin-left: -20px; 
+}
 
   
 #myLinks {
@@ -30,13 +47,13 @@
 }
   
   /* Style navigation menu links */
-  .topnav a {
+  /* .topnav a {
     color: white;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     display: block;
-  }
+  } */
   
 /* style for toogle link */
 
@@ -47,6 +64,8 @@
     position: absolute;
     left: 0;
     top: 0;
+    color: white;
+    padding: 10px 14px;
   }
   
   /* Add a grey background color on mouse-over */
@@ -60,4 +79,5 @@
     background-color: black;
     color: white;
     text-align: center;
+    text-decoration: none;
   }
